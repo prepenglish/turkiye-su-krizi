@@ -20,7 +20,6 @@
       text-align: center;
     }
 
-    /* Ana metin kutusu */
     .main-text {
       background: linear-gradient(90deg, #0077b6, #00b4d8);
       color: white;
@@ -34,7 +33,6 @@
       width: 90%;
     }
 
-    /* Kutuların kapsayıcısı */
     .boxes-container {
       display: flex;
       justify-content: center;
@@ -45,8 +43,8 @@
       max-width: 1200px;
     }
 
-    /* Her bir kutu / buton */
-    .box {
+    a.box {
+      display: block;
       background: linear-gradient(145deg, #a0e7e5, #b4f8c8);
       padding: 25px;
       width: 220px;
@@ -55,9 +53,10 @@
       text-align: center;
       cursor: pointer;
       transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
     }
 
-    .box:hover {
+    a.box:hover {
       transform: translateY(-10px);
       box-shadow: 0 15px 25px rgba(0,0,0,0.3);
     }
@@ -79,13 +78,12 @@
       line-height: 1.4;
     }
 
-    /* Responsive: ekran küçülünce kutular alt alta */
     @media (max-width: 600px) {
       .boxes-container {
         flex-direction: column;
         align-items: center;
       }
-      .box {
+      a.box {
         width: 80%;
       }
     }
@@ -93,33 +91,31 @@
 </head>
 <body>
 
-  <!-- Ana metin -->
   <div class="main-text">
     Bu projenin amacı su krizlerinin farkındalığını yansıtmak ve su elde etmenin çevremizdeki önemini kavramaktır. En önemli detayı ise fizik prensipleriyle ifade etme yoludur. Akışkanlar mekaniği ve çevre fiziği bu projeyi şekillendiren başlıca konu başlıklarıdır.
   </div>
 
-  <!-- 5 kutu / buton -->
   <div class="boxes-container">
-    <div class="box">
+    <a href="fizik.html" class="box">
       <h3><i class="fas fa-atom"></i> 1. Fizik Bağlantısı</h3>
       <p>Fizik prensipleriyle projenin bağlantısı burada anlatılacak.</p>
-    </div>
-    <div class="box">
+    </a>
+    <a href="dogadan.html" class="box">
       <h3><i class="fas fa-leaf"></i> 2. Doğadan İlham Alan Sistemler</h3>
       <p>Doğadan ilham alınarak geliştirilmiş yöntemler açıklanacak.</p>
-    </div>
-    <div class="box">
+    </a>
+    <a href="deney.html" class="box">
       <h3><i class="fas fa-flask"></i> 3. Deney/Model</h3>
       <p>Projede yapılan deney veya modelin detayları burada yer alacak.</p>
-    </div>
-    <div class="box">
+    </a>
+    <a href="etkileşim.html" class="box">
       <h3><i class="fas fa-hand-pointer"></i> 4. Etkileşimli Bölüm</h3>
       <p>Kullanıcı veya izleyici etkileşimleri bu kutuda gösterilecek.</p>
-    </div>
-    <div class="box">
+    </a>
+    <a href="sonuc.html" class="box">
       <h3><i class="fas fa-check-circle"></i> 5. Sonuç ve Değerlendirme</h3>
       <p>Projenin sonuçları ve değerlendirmesi burada paylaşılacak.</p>
-    </div>
+    </a>
   </div>
 
 </body>
