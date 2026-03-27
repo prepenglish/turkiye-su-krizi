@@ -1,143 +1,111 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Su Krizleri Projesi</title>
-
-  <!-- Font Awesome ikonları için -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #eef6f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .main-text {
-      background: linear-gradient(90deg, #0077b6, #00b4d8);
-      color: white;
-      padding: 50px 20px;
-      font-size: 22px;
-      font-weight: bold;
-      line-height: 1.6;
-      border-radius: 15px;
-      margin: 40px 20px 20px 20px;
-      max-width: 900px;
-      width: 90%;
-      text-align: left; /* maddeleri düzgün göstermek için sola hizalı */
-    }
-
-    .main-text h2 {
-      margin-top: 0;
-      color: #ffd60a; /* sarı başlık rengi */
-    }
-
-    .boxes-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-bottom: 40px;
-      width: 90%;
-      max-width: 1200px;
-    }
-
-    a.box {
-      display: block;
-      background: linear-gradient(145deg, #a0e7e5, #b4f8c8);
-      padding: 25px;
-      width: 220px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      text-align: center;
-      cursor: pointer;
-      transition: transform 0.3s, box-shadow 0.3s;
-      text-decoration: none;
-    }
-
-    a.box:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 25px rgba(0,0,0,0.3);
-    }
-
-    .box h3 {
-      margin-top: 0;
-      color: #0077b6;
-      font-size: 18px;
-    }
-
-    .box h3 i {
-      margin-right: 8px;
-      color: #0077b6;
-    }
-
-    .box p {
-      font-size: 15px;
-      color: #333;
-      line-height: 1.4;
-    }
-
-    @media (max-width: 600px) {
-      .boxes-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      a.box {
-        width: 80%;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Su Krizleri Projesi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:20px; background:#eef6f9; text-align:center; }
+h1,h2{color:#0077b6;}
+.main-text { background: linear-gradient(90deg,#0077b6,#00b4d8); color:white; padding:30px; font-size:18px; font-weight:bold; border-radius:15px; max-width:900px; margin:auto; text-align:left; }
+.boxes-container { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; margin:30px 0; }
+.box { background: linear-gradient(145deg,#a0e7e5,#b4f8c8); padding:20px; width:200px; border-radius:15px; cursor:pointer; transition:0.3s; }
+.box:hover { transform: translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.box h3 { margin:0; font-size:16px; }
+.detail { max-width:900px; margin:auto; text-align:left; background:#fff; padding:20px; border-radius:10px; display:none; margin-bottom:20px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+</style>
 </head>
 <body>
 
-  <!-- Ana metin -->
-  <div class="main-text">
-    <h2>TÜRKİYE BAŞLIĞI ALTINDA SU KRİZİ</h2>
-    Türkiye, başlıca nedenleri olan, iklim değişikliği, nüfus artışı ve kaynakların yanlış şekilde kullanılması sonucunda ‘’Su Krizi’’ olarak adlandırdığımız başlıca sorunlarla mücadele etmektedir.
-    <br><br>
-    <strong>TEMEL NEDENLER:</strong>
-    <ul>
-      <li>İklim değişikliği - kuraklık</li>
-      <li>Tarımsal sulama</li>
-      <li>Barajların durumu</li>
-      <li>Göllerin kuruması</li>
-      <li>Göç</li>
-      <li>Bilinçsizlik</li>
-    </ul>
-    <br>
-    Bu projenin amacı su krizlerinin farkındalığını yansıtmak ve su elde etmenin çevremizdeki önemini kavramaktır. En önemli detayı ise fizik prensipleriyle ifade etme yoludur. Akışkanlar mekaniği ve çevre fiziği bu projeyi şekillendiren başlıca konu başlıklarıdır.
-  </div>
+<div class="main-text">
+  <h2>TÜRKİYE BAŞLIĞI ALTINDA SU KRİZİ</h2>
+  Türkiye, başlıca nedenleri olan, iklim değişikliği, nüfus artışı ve kaynakların yanlış şekilde kullanılması sonucunda ‘’Su Krizi’’ olarak adlandırdığımız başlıca sorunlarla mücadele etmektedir.
+  <br><br>
+  <strong>TEMEL NEDENLER:</strong>
+  <ul>
+    <li>İklim değişikliği - kuraklık</li>
+    <li>Tarımsal sulama</li>
+    <li>Barajların durumu</li>
+    <li>Göllerin kuruması</li>
+    <li>Göç</li>
+    <li>Bilinçsizlik</li>
+  </ul>
+  <br>
+  Bu projenin amacı su krizlerinin farkındalığını yansıtmak ve su elde etmenin çevremizdeki önemini kavramaktır. En önemli detayı ise fizik prensipleriyle ifade etme yoludur. Akışkanlar mekaniği ve çevre fiziği bu projeyi şekillendiren başlıca konu başlıklarıdır.
+</div>
 
-  <!-- 5 kutu / buton -->
-  <div class="boxes-container">
-    <a href="fizik.html" class="box">
-      <h3><i class="fas fa-atom"></i> 1. Fizik Bağlantısı</h3>
-      <p>Fizik prensipleriyle projenin bağlantısı burada anlatılacak.</p>
-    </a>
-    <a href="dogadan.html" class="box">
-      <h3><i class="fas fa-leaf"></i> 2. Doğadan İlham Alan Sistemler</h3>
-      <p>Doğadan ilham alınarak geliştirilmiş yöntemler açıklanacak.</p>
-    </a>
-    <a href="deney.html" class="box">
-      <h3><i class="fas fa-flask"></i> 3. Deney/Model</h3>
-      <p>Projede yapılan deney veya modelin detayları burada yer alacak.</p>
-    </a>
-    <a href="etkileşim.html" class="box">
-      <h3><i class="fas fa-hand-pointer"></i> 4. Etkileşimli Bölüm</h3>
-      <p>Kullanıcı veya izleyici etkileşimleri bu kutuda gösterilecek.</p>
-    </a>
-    <a href="sonuc.html" class="box">
-      <h3><i class="fas fa-check-circle"></i> 5. Sonuç ve Değerlendirme</h3>
-      <p>Projenin sonuçları ve değerlendirmesi burada paylaşılacak.</p>
-    </a>
+<div class="boxes-container">
+  <div class="box" onclick="toggleDetail('fizik')">
+    <h3><i class="fas fa-atom"></i> 1. Fizik Bağlantısı</h3>
   </div>
+  <div class="box" onclick="toggleDetail('dogadan')">
+    <h3><i class="fas fa-leaf"></i> 2. Doğadan İlham Alan Sistemler</h3>
+  </div>
+  <div class="box" onclick="toggleDetail('deney')">
+    <h3><i class="fas fa-flask"></i> 3. Deney/Model</h3>
+  </div>
+  <div class="box" onclick="toggleDetail('etkilesim')">
+    <h3><i class="fas fa-hand-pointer"></i> 4. Etkileşimli Bölüm</h3>
+  </div>
+  <div class="box" onclick="toggleDetail('sonuc')">
+    <h3><i class="fas fa-check-circle"></i> 5. Sonuç ve Değerlendirme</h3>
+  </div>
+</div>
+
+<!-- Detay Metinleri -->
+<div id="fizik" class="detail">
+  <h2>AKIŞKANLAR MEKANİĞİ NEDİR?</h2>
+  <p>Bilimsel tanım: Akışkanlar mekaniği, sıvılar ve gazların statik veya dinamik hallerini ve bu maddelere etki eden kuvvetleri inceleyen bir fizik/mühendislik dalıdır. Bu projede suyun filtre içerisinden geçişi, hızı ve etkileşimler bununla ilgilidir. Ayrıca arıtma sistemlerinde basınç prensibi ile birlikte su, kum ve taş gibi küçük boşluklardan geçebilir. Filtrasyonun önemi projede bu aşamada verilir. Filtrasyon deneylerinde malzemelerin görevi ve işlemi çok önemlidir.</p>
+
+  <h2>ÇEVRE FİZİĞİ NEDİR?</h2>
+  <p>Bilimsel tanım: Çevre fiziği, doğal çevre ile canlı ortamın arasındaki etkileşimleri fizik prensipleriyle inceleyen bir alandır. Proje de arıtma sistemlerinin doğal bileşenlerden oluşması önemlidir ve doğadan ilham alınabilen sistemler geliştirilebilir veya esas alınmıştır.</p>
+</div>
+
+<div id="dogadan" class="detail">
+  <h2>DOĞADAN İLHAM ALAN SİSTEMLER</h2>
+  <h3>1. Kum ve Toprak Filtrasyonu</h3>
+  <p>Yağmur suları veya diğer adıyla kirli sular birçok katmadan geçer: taş, kum toprak. Bu süreçte su fiziksel olarak temizlenmiş olur ve bu olaya doğal filtrasyon denir.</p>
+  <ul>
+    <li>Büyük taşlar → büyük parçacıkları tutar, temel temizlik yapar.</li>
+    <li>Kum → daha küçük kirleri filtreler, detaylı şekilde temizler.</li>
+    <li>Toprak → çok ince parçacıkları ve bazı zararlı maddeleri tutar. Sağlık açısından temizlik sağlar.</li>
+  </ul>
+  <h3>2. Bitkilerle Su Arıtma (Fitoremediasyon)</h3>
+  <p>Su ve toprak kirliliğini gidermek için yeşil bitkilerin ve mikroorganizmaların kullanıldığı yöntemdir. Bitkiler ağır metalleri, azot ve fosforu kökleriyle emerek sudan arındırır. Suyun sürdürülebilir şekilde arıtılmasını sağlar.</p>
+  <p>Örnek bitkiler: Su sümbülü, su mercimeği, su marulu, yüzen eğrelti otları, peri yosunu.</p>
+  <h3>3. Güneş Enerjisiyle Su Arıtma</h3>
+  <p>Kirli su ısınır, buharlaşır ve temiz su elde edilir. Sürdürülebilir su arıtmanın alternatif yollarından biridir.</p>
+</div>
+
+<div id="deney" class="detail">
+  <h2>DENAY/ MODEL</h2>
+  <p>Buraya deney veya model ile ilgili metinleri ekleyeceğiz. Örneğin filtrasyon düzeneği, malzemelerin nasıl kullanıldığı ve gözlemler.</p>
+</div>
+
+<div id="etkilesim" class="detail">
+  <h2>ETKİLEŞİMLİ BÖLÜM</h2>
+  <p>Buraya kullanıcı veya izleyici etkileşimlerini ekleyeceğiz. Örneğin görseller, slider, animasyon veya test bölümü.</p>
+</div>
+
+<div id="sonuc" class="detail">
+  <h2>SONUÇ VE DEĞERLENDİRME</h2>
+  <p>Türkiye’nin son yılların en ciddi kuraklık dönemlerinden birini yaşadığını görebiliyoruz. Göllerimiz, denizlerimiz çekiliyor. Ortalama yağış miktarı küresel ısınma nedeniyle azalıyor. Sıcaklığın yıllar boyu yükseliş eğiliminde olduğu verilerle açıklanıyor.</p>
+  <p>Kuraklık ve su kaynağının tükenmesi 2026 yılında ciddi sonuçlar getireceği için korku salıyor. Türkiye bazında yılda bir kişi başına düşen su miktarı 1.519m³ olup 2050 yılında 1.069 m³’e kadar düşmesi bekleniyor.</p>
+  <p>Proje kapsamında doğadan ilham alınarak sürdürülebilir su arıtma yöntemleri araştırılmış ve fizik prensipleriyle ilişkilendirilmiştir. Özellikle akışkanlar mekaniği ve çevre fiziği çerçevesinde, suyun farklı katmanlardan geçerken nasıl temizlendiği incelenmiştir. Kum, taş ve pamuk gibi malzemelerin suyun içerisindeki farklı boyuttaki kirleri nasıl ayırdığı, gözeneklik etkisi gözlemlenmiştir.</p>
+  <p>DAHA FAZLA BİLGİ İÇİN: MİNİ KİŞİSEL PROJE RAPORUMA BAKABİLİRSİNİZ.</p>
+</div>
+
+<script>
+function toggleDetail(id) {
+  const all = document.querySelectorAll('.detail');
+  all.forEach(d => d.style.display = 'none'); // Hepsini gizle
+  const el = document.getElementById(id);
+  if(el.style.display === 'block'){ el.style.display='none'; }
+  else{ el.style.display='block'; }
+  window.scrollTo({ top: el.offsetTop - 20, behavior: 'smooth' });
+}
+</script>
 
 </body>
 </html>
